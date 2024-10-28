@@ -4,7 +4,7 @@ async function showData() {
     const searchResultsDiv = document.getElementById("searchResultsDiv");
     searchResultsDiv.innerHTML = "";
 
-    const response = await fetch('/travel_recommendation_api.json', {
+    const response = await fetch('./travel_recommendation_api.json', {
         headers: {
             'Accept': 'application/json'
         }
@@ -12,7 +12,7 @@ async function showData() {
     const data = await response.json();
 
     const table = document.createElement("table");
-    let jsonData = undefined;
+    let jsonData;
     if (searchText === 'beach' || searchText === 'beaches') {
         jsonData = data.beaches;
     } else if (searchText === 'temple' || searchText === 'temples') {
