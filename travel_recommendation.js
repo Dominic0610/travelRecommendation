@@ -27,7 +27,7 @@ async function showData() {
                 let tr = table.insertRow();
                 let td = tr.insertCell();
                 let img = document.createElement('img');
-                img.setAttribute('src', `/images/${cityData[j].imageUrl}`);
+                img.setAttribute('src', `./images/${cityData[j].imageUrl}`);
                 img.setAttribute('alt', cityData[j].name);
                 img.setAttribute('width', '1000px');
                 td.appendChild(img);
@@ -63,7 +63,7 @@ async function showData() {
         let tr = table.insertRow();
         let td = tr.insertCell();
         let img = document.createElement('img');
-        img.setAttribute('src', `/images/${jsonData[i].imageUrl}`);
+        img.setAttribute('src', `./images/${jsonData[i].imageUrl}`);
         img.setAttribute('alt', jsonData[i].name);
         img.setAttribute('width', '1000px');
         td.appendChild(img);
