@@ -97,4 +97,7 @@ const clearButton = document.getElementById('clearButton');
 clearButton.addEventListener("click", function () {
     const searchResultsDiv = document.getElementById("searchResultsDiv");
     searchResultsDiv.innerHTML = "";
+
+    const search = document.getElementById("search");
+    search.value = "";
 });
